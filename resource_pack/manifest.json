@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "uuid": "ae202ed0-cc2e-43ad-8e81-8f6b31e26ba2",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 30]
+  },
+  "modules": [
+    {
+      "description": "Tuff Pickaxe",
+      "type": "resources",
+      "uuid": "8061bacd-75b0-4022-b45f-9bc6f741609b",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7e5dba83-b9cf-4e99-a6cb-ec10752d9be0",
+      "version": [1, 0, 0]
+    }
+  ]
+}

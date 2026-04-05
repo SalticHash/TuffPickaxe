@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "beastboy:tuff_pickaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", " # ", " # "],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:tuff"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tuff"
+      }
+    ],
+    "result": {
+      "item": "beastboy:tuff_pickaxe"
+    },
+    "priority": -1
+  }
+}

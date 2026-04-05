@@ -1,0 +1,59 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "beastboy:tuff_pickaxe",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.pickaxe"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            // Give the item the correct positioning in third person
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 132
+            },
+            // How much additional damage this tool will deal to entities
+            "minecraft:damage": 4,
+            // We also let it be enchantable in the "pickaxe" slot
+            "minecraft:enchantable": {
+                "value": 5,
+                "slot": "pickaxe"
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('minecraft:is_pickaxe_item_destructible')"
+                        },
+                        "speed": 4
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:stone_tier", "minecraft:is_pickaxe", "minecraft:is_tool", "minecraft:digger"
+                ]
+            },
+            // This texture is used for both inventory and the hand model
+            "minecraft:icon": "beastboy:tuff_pickaxe",
+            // Allow the sword to be repaired with sticks
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": ["beastboy:tuff_pickaxe"],
+                        "repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
+                    },
+                    {
+                        "items": ["minecraft:tuff"],
+                        "repair_amount": "q.max_durability * 0.25"
+                    }
+                ]
+            },
+            "beastboy:tuff_pickaxe_component": {}
+        }
+    }
+}
